@@ -1,0 +1,1 @@
+This is Outside web trainee assignments
