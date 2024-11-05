@@ -1,0 +1,209 @@
+button:hover{
+    background-color:green;
+    color: #fff;
+}
+input:focus{
+    background-color: skyblue;
+}
+a:active{
+    color: red;
+}
+
+/* form selectors */
+form {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+label{
+    padding: 30px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+button {
+    
+    
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;/* Base Styles */
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    /* :is() pseudo-class - applies styling to multiple selectors */
+    :is(h1, h2, h3) {
+        color: #333;
+        font-family: Arial, sans-serif;
+    }
+    
+    /* :not() pseudo-class - styling everything except a specific selector */
+    p:not(:last-of-type) {
+        color: #555;
+    }
+    
+    /* :has() pseudo-class (not widely supported yet) - style parent based on child */
+    section:has(p) {
+        border: 2px solid #ccc;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    
+    /* State-based selectors for buttons */
+    button:hover {
+        background-color: green;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }
+    
+    /* Form field selectors */
+    input:focus {
+        background-color: skyblue;
+    }
+    
+    input:valid {
+        border: 2px solid green;
+    }
+    
+    input:invalid {
+        border: 2px solid red;
+    }
+    
+    /* :in-range and :out-of-range for number inputs */
+    input[type="number"]:in-range {
+        border: 2px solid green;
+    }
+    
+    input[type="number"]:out-of-range {
+        border: 2px solid red;
+    }
+    
+    /* Styling checked checkboxes */
+    input[type="checkbox"]:checked + label {
+        color: green;
+        font-weight: bold;
+    }
+    
+    /* Links - active and hover state */
+    a:active {
+        color: red;
+    }
+    
+    a:hover {
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    /* Form container styling */
+    form {
+        max-width: 400px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    
+    button {
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    /* Word-based selectors */
+    p::first-letter {
+        font-size: 48px;
+        color: orange;
+    }
+    
+    p::first-line {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    /* Styling selected text */
+    p::selection {
+        background-color: yellow;
+        color: black;
+    }
+    
+    transition: background-color 0.3s ease;
+}
+input{
+    margin-bottom:20px;
+}
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+/* Level 4 selectors and pseudo-classes */
+
+/* :is() pseudo-class - applies styling to multiple selectors */
+:is(h1, h2, h3) {
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* :not() pseudo-class - styling everything except a specific selector */
+p:not(:last-of-type) {
+    color: #555;
+}
+
+/* :has() pseudo-class (not widely supported yet) - style parent based on child */
+section:has(p) {
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* Word-based selectors - applying styles to specific parts of a paragraph */
+p::first-line {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Styling specific text elements */
+p::selection {
+    color: black;
+}
