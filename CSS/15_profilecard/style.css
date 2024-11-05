@@ -47,6 +47,40 @@ body{
 .profile__name{
     line-height: 2em;
 }
+.image{
+    position: relative;
+    margin-bottom: 40px;
+}
+.profile__border{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    translate: -50% -50% ;
+    animation: rotate 3s linear infinite;
+    z-index: 2;
+    rotate: 180deg;
+}
+.profile__border1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    translate: -50% -50% ;
+    animation: rotate 3s linear infinite;
+    /* z-index: 2; */
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{transform: rotate(30deg);}
+    100%{
+        transform: rotate(360deg);
+    }
+}
 
 h3{
     font-size: 20px;
@@ -146,7 +180,7 @@ p{
      }
     .profile__picture{
         flex-direction: column;
-        margin: 80px;
+        margin: 50px;
         grid-row: 1 / span 2;;
     }
     .profile__name{
