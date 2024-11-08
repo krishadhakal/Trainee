@@ -1,0 +1,30 @@
+.box1{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: antiquewhite;
+}
+.box2{
+    padding-inline: 15px 40px;
+    writing-mode: vertical-rl;
+    background-color: silver;
+}
+.box3{
+    padding-block: 20px;
+    padding-block: 35px 40px; /*padding-block: start end;*/
+    background-color: beige;
+}
+.box4{
+    padding-inline-end: 5em;
+    writing-mode: vertical-lr;
+    direction: rtl; /*right to left*/
+    padding-inline-start: 6em;
+    background-color: aquamarine;
+    justify-self: end;
+}
+.box5{
+    background-color: pink;
+    padding-block: 30px;
+    padding-inline: 40px;
+}

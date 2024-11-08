@@ -1,0 +1,21 @@
+.card {
+  border: 1px solid black;
+  padding: 10px;
+  width: 600px;
+}
+@media screen and (min-width: 428px) {
+  .card {
+    display: flex;
+  }
+}
+.card__media-image {
+  width: 100%;
+}
+.card__content {
+  margin: 30px;
+}
+@media screen and (max-width: 427px) {
+  .card__content {
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

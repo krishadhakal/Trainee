@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    margin: 20px;
+}
+
+.content-box {
+    box-sizing: content-box; /* Default box model */
+    width: 700px;
+    height: 200px;
+    padding: 50px;
+    border: 5px solid #333;
+    background-color: lightblue;
+    margin: 10px;
+}
+
+.border-box {
+    box-sizing: border-box; /* Alternate box model */
+    width: 700px;
+    height: 200px;
+    padding: 50px;
+    border: 5px solid #333;
+    background-color: lightpink;
+    margin: 10px;
+}

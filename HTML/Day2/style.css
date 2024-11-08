@@ -1,0 +1,45 @@
+body{
+    font-family: 'Montserrat', sans-serif; 
+    padding: 0px 30px 0px 30px;
+}
+a {
+    text-decoration: none;
+    margin-inline-end: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    /* color: white; */
+}
+p, li{
+    line-height: 1.5em;
+}
+#content4 img{
+    transition: 1s ease;
+}
+
+#content4 img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+}
+.text-red{
+    color: #b1100f ;
+    text-decoration: line-through;
+    font-weight: bold;
+}
+.cont_audio{
+    display: inline-block; 
+    padding: 20px; 
+    margin-bottom: 20px;
+    vertical-align: top;
+}
+.cont__cap{
+    display: inline-block; 
+    padding: 20px; 
+    margin-top: 120px; 
+    margin-bottom: 120px; 
+    vertical-align: top;
+}

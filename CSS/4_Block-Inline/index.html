@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Block and Inline Elements</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Block Elements Examples</h2>
+        <div class="block">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <p>This is a paragraph, which is a block element that takes up full width by default.</p>
+            <h3>Unordered List</h3>
+            <ul>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ul>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Apple</li>
+                <li>Mango</li>
+            </ol>
+            <h3>Table</h3>
+            <table>
+                <tr>
+                    <th>Fruits</th>
+                    <th>Vegetables</th>
+                    <th>Dry Fruits</th>
+                </tr>
+                <tr>
+                    <td>Grapes</td>
+                    <td>Potato</td>
+                    <td>Almonds</td>
+                </tr>
+                <tr>
+                    <td>Banana</td>
+                    <td>Cauliflower</td>
+                    <td>Cashew</td>
+                </tr>
+            </table>
+            <section>
+                This is a section block element.
+            </section>
+            <article>
+                This is an article block element.
+            </article>
+            <footer>
+                This is a footer block element.
+            </footer>
+        </div>
+
+        <h2>Inline Elements Examples</h2>
+        <div class="block">
+            <p>
+                Here’s a <span class="inline">span</span> inline element within a paragraph.
+                <a href="#" class="inline">This is a link</a> that is also an inline element.
+                <img src="src/retro.jpg" alt="Example image" class="inline"> is an inline image.
+            </p>
+            <p>
+                <strong>This text is strongly emphasized</strong> and appears bold.
+                <em>This text is emphasized</em> and appears italicized.
+                <b>This text is bold</b> with inline styling.
+                <i>This text is italic</i> with inline styling.
+                <u>This text is underlined</u> for emphasis.
+                <label for="input" class="inline">This is a label for a form field:</label>
+                <input type="text" id="input" placeholder="Type here">
+            </p>
+            <p>
+                The abbreviation <abbr title="Hypertext Markup Language">HTML</abbr> is also an inline element.
+            </p>
+            <p>
+                <code>print("Hello, world!")</code> is an example of inline code.
+                <samp>Sample output</samp> shows text as if from a computer.
+                The variable <var>x</var> could represent an unknown quantity in math or programming.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

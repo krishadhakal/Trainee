@@ -1,0 +1,56 @@
+/* except for method 5 uncomment the below css */
+/* .box {
+  display: inline-block;
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+} */
+
+
+/* method 1 setting fontsize on parent container */
+/* .container {
+  font-size: 0;
+} */
+
+
+/* method 2 adjusting negative margin */
+/* .box{
+  margin-right: -4px;
+} */
+
+/* method 3 using letter spacing: normal reset for child elements */
+/* .box{
+  letter-spacing: normal;
+}
+.container {
+  letter-spacing: -4px; 
+} */
+
+
+/* method 4 changing inline block to float */
+/* .box{
+  float: left;
+}
+.conatiner{
+  content: "";
+  display: table;
+  clear: both;
+} */
+
+/* method 5 uding display flex */
+.container {
+  display: flex; 
+}
+.box {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  font-size: 18px;
+}
