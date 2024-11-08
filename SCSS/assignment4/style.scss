@@ -1,0 +1,23 @@
+// $units: (
+//     px: 'px', 
+//     em: 'em', 
+//     rem: 'rem',
+//     per: '%'
+// );
+$positions: (
+    t: 'top', 
+    r: 'right', 
+    b: 'bottom',
+    l: 'left'
+);
+
+@for $size from 1 through 10 {
+    @each $position, $pos in $positions{
+        .m-#{$position}-#{$size}{
+            margin-#{$pos}: #{$size*4}px;
+        }
+        .p-#{$position}-#{$size}{
+            padding-#{$pos}: #{$size*4}px;
+        }
+    }
+}
