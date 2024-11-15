@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+
+    @media screen and (min-width: 768px) {  
+        flex-direction: row; 
+        .content{
+            flex-grow: 1;
+        }
+    }
+
+    // sidebar css
+    .sidebar {  
+        width: 100%;
+        padding-right: 0;
+        margin-right: 0;
+        position: relative;
+        margin-bottom: 20px;
+    
+        @media screen and (min-width: 768px) {  
+            max-width: 250px;
+            padding-right: 20px;
+            margin-right: 20px;
+            position: sticky;
+            top: 10px;
+            align-self: flex-start; //align sidebar to the start in the flex container
+            height: 100vh;
+            // background-color: $stone-900;
+        }
+
+        &__list {
+            .list-group {
+                &-item {
+                    padding-bottom: 10px;
+                    border-bottom: 1px solid gray;
+                }
+
+                a {
+                    list-style-type: none;
+                    text-decoration: none;
+                    color: $charcoal;
+                    padding: 10px;
+                    font-size: 1.25rem;
+                    display: block;
+                }
+                a:hover{
+                    color: $orange;
+                }
+                a:active{
+                    color: $orange;
+                }
+            }
+        }
+    }
+
+    //color css
+    .color {
+        $block: ".color";
+        
+        &__container {
+            width: 100%;
+            padding-block: 0px 30px;
+            border-bottom: 1px solid;
+
+            #{$block}__head {
+                @include header();
+            }
+        }
+
+        #{$block}__list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media screen and (min-width: 600px) {  
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            #{$block}__card {
+                width: 100%;
+                height: 150px;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+                @media screen and (min-width: 600px) {  
+                    flex-basis: calc(50% - 10px); 
+                }
+
+                @media screen and (min-width: 1024px) {  
+                    flex-basis: calc(25% - 30px); 
+                }
+
+                code {
+                    background-color: #fff;
+                    padding: 10px;
+                    width: 100%;
+                }
+            }
+
+            .orange {
+                background-color: $orange;
+            }
+
+            .charcoal {
+                background-color: $charcoal;
+            }
+
+            .sky-blue {
+                background-color: $sky-blue;
+            }
+
+            .stone {
+                background-color: $stone-900;
+            }
+
+            #{$block}__body {
+                padding: 20px;
+                color: #fff;
+
+                > * {
+                    display: block;
+                }
+            }
+        }
+    }
+}

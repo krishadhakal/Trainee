@@ -1,0 +1,226 @@
+
+.typography{
+    $block: '.typography';
+    &__container{
+        margin-block: 30px;
+
+        // headings css        
+        #{$block}__header{
+            @include header();
+        }
+
+        #{$block}__headings{
+            padding-bottom: 10px;
+            border-bottom: 1px solid;
+        }
+        #{$block}__info{ 
+            line-height: 1.5;
+            margin-bottom: 20px;
+            &-title{
+                font-size: 24px;
+            }
+            &-weight, &-spacing{
+                font-size: 18px;
+            }
+        }
+        #{$block}__heading{
+            margin-bottom: 20px;
+            &--h1, &--h2, &--h3, &--h4, &--h5, &--h6{
+                font-weight: 500; 
+                line-height: 1.5;  
+            }
+            &--h1{
+                h1{
+                    font-size: 40px;
+                }
+            }
+            &--h2{
+                h2{
+                    font-size: 28px;
+                }
+            }
+            &--h3{
+                h1{
+                    font-size: 20px;
+                }
+            }
+            &--h4{
+                h4{
+                    font-size: 18px;
+                }
+            }
+            &--h5{
+                h5{
+                    font-size: 14px;
+                }
+            }
+            &--h6{
+                h6{
+                    font-size: 13px;
+                }
+            }
+            //tablet screen
+            @media screen and (min-width: 600px){
+                &--h1{
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+                &--h2{
+                    h2{
+                        font-size: 30.8px;
+                    }
+                }
+                &--h3{
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+                &--h4{
+                    h4{
+                        font-size: 19.8px;
+                    }
+                }
+                &--h5{
+                    h5{
+                        font-size: 15.4px;
+                    }
+                }
+                &--h6{
+                    h6{
+                        font-size: 14.3px;
+                    }
+                }
+            }
+
+            //desktop screen
+            @media screen and (min-width: 1024px){
+                &--h1{
+                    h1{
+                        font-size: 64px;
+                    }
+                }
+                &--h2{
+                    h2{
+                        font-size: 40px;
+                    }
+                }
+                &--h3{
+                    h3{
+                        font-size: 32px;
+                    }
+                }
+                &--h4{
+                    h4{
+                        font-size: 24px;
+                    }
+                }
+                &--h5{
+                    h5{
+                        font-size: 16px;
+                    }
+                }
+                &--h6{
+                    h6{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        // text css
+        #{$block}__text{
+            border-bottom: 1px solid ;
+            &-header{
+                @include header();
+            }
+            &-item{
+                line-height: 1.5;
+                margin-bottom: 20px;
+                font-weight:400;
+                &--large{
+                    p:first-child{
+                        font-size: 20px;
+                    }
+                }
+                &--medium{
+                    p:first-child{
+                        font-size:16px;
+                    }
+                }
+                &--regular{
+                    p:first-child{
+                        font-size: 14px;
+                    }
+                }
+                &--small{
+                    p:first-child{
+                        font-size: 13px;
+                    }
+                }
+                &--xsmall{
+                    p:first-child{
+                        font-size: 13px;
+                    }
+                }
+                // tablet screen
+                @media screen and (min-width: 600px){
+                    &--large{
+                        p:first-child{
+                            font-size: 26px;
+                        }
+                    }
+                    &--medium{
+                        p:first-child{
+                            font-size:20.8px;
+                        }
+                    }
+                    &--regular{
+                        p:first-child{
+                            font-size: 18.2px;
+                        }
+                    }
+                    &--small{
+                        p:first-child{
+                            font-size: 16.9px;
+                        }
+                    }
+                    &--xsmall{
+                        p:first-child{
+                            font-size: 15.6px;
+                        }
+                    }
+                }
+
+                // desktop screen
+                @media screen and (min-width: 600px){
+                    &--large{
+                        p:first-child{
+                            font-size: 24px;
+                        }
+                    }
+                    &--medium{
+                        p:first-child{
+                            font-size:20px;
+                        }
+                    }
+                    &--regular{
+                        p:first-child{
+                            font-size: 16px;
+                        }
+                    }
+                    &--small{
+                        p:first-child{
+                            font-size: 14px;
+                        }
+                    }
+                    &--xsmall{
+                        p:first-child{
+                            font-size: 15.6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

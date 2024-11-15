@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styleguide Assignment</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h2>StyleGuide - Development Gudielines</h2>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- aside bar -->
+        <aside id="sidebar" class="sidebar">
+            <div class="sidebar__list">
+                <ul class="list-group">
+                    <a href="#color">
+                        <li class="list-group-item">Colors</li>
+                    </a>
+                    <a href="#typography">
+                        <li class="list-group-item">Typography</li>
+                    </a>
+                    <a href="#icons">
+                        <li class="list-group-item">Icons</li>
+                    </a>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content">
+            <!-- color section -->
+            <section id="color" class="color">
+                <div class="color__container">
+                    <div class="color__head">
+                        <h2>Colors</h2>
+                    </div>
+                    <div class="color__list">
+                        <div class="color__card orange">
+                            <div class="color__body">
+                                <strong>Orange</strong>
+
+                                <i>$orange</i>
+                                <span>#FF961C</span>
+
+                            </div>
+                            <code>
+                            .bg-orange
+                        </code>
+                        </div>
+                        <div class="color__card charcoal">
+                            <div class="color__body">
+                                <strong>Charcoal</strong>
+                                <i>$charcoal</i>
+                                <span>#212121</span>
+                            </div>
+                            <code>
+                            .bg-charcoal
+                        </code>
+                        </div>
+                        <div class="color__card sky-blue">
+                            <div class="color__body">
+                                <strong>Sky Blue</strong>
+
+                                <i>$sky-blue</i>
+                                <span>#6BC6EC</span>
+
+                            </div>
+                            <code>
+                            .bg-sky-blue
+                        </code>
+                        </div>
+                        <div class="color__card stone">
+                            <div class="color__body">
+                                <strong>Stone/900</strong>
+
+                                <i>$stone-900</i>
+                                <span>#CCCEB7</span>
+
+                            </div>
+                            <code>
+                            .bg-stone-900
+                        </code>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- typography section -->
+            <section id="typography" class="typography">
+                <div class="typography__container">
+                    <div class="typography__header">
+                        <h2 class="typography__title">Typography</h2>
+                    </div>
+            
+                    <div class="typography__headings">
+                        <div class="typography__info">
+                            <h2 class="typography__info-title">h1, h2, h3, h4, h5, h6 - Headings</h2>
+                            <p class="typography__info-weight">Font-Weight: 500</p>
+                            <p class="typography__info-spacing">Letter Spacing: -3%</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h1">
+                            <h1 class="typography__heading-title">h1 - Heading 1</h1>
+                            <p class="typography__heading-size">Desktop-XL 64px/64px Mobile/tablet 40px/40px</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h2">
+                            <h2 class="typography__heading-title">h2 - Heading 2</h2>
+                            <p class="typography__heading-size">Desktop-XL 40px/44px Mobile/tablet 28px/30.8px</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h3">
+                            <h3 class="typography__heading-title">h3 - Heading 3</h3>
+                            <p class="typography__heading-size">Desktop-XL 32px/35.2px Mobile/tablet 20px/22px</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h4">
+                            <h4 class="typography__heading-title">h4 - Heading 4</h4>
+                            <p class="typography__heading-size">Desktop-XL 24px/26.4px Mobile/tablet 18px/19.8px</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h5">
+                            <h5 class="typography__heading-title">h5 - Heading 5</h5>
+                            <p class="typography__heading-size">Desktop-XL 16px/17.6px Mobile/tablet 14px/15.4px</p>
+                        </div>
+            
+                        <div class="typography__heading typography__heading--h6">
+                            <h6 class="typography__heading-title">h6 - Heading 6</h6>
+                            <p class="typography__heading-size">Desktop-XL 14px/15.4px Mobile/tablet 13px/14.3px</p>
+                        </div>
+                    </div>
+            
+                    <div class="typography__text">
+                        <div class="typography__text-header">
+                            <h2 class="typography__text-title">Text</h2>
+                        </div>
+                        <div class="typography__text-item typography__text-item--large">
+                            <p class="typography__text-label">Text Size Large</p>
+                            <p class="typography__text-size">Desktop - XL 24px/31.2px Mobile/tablet 20px/26px</p>
+                        </div>
+            
+                        <div class="typography__text-item typography__text-item--medium">
+                            <p class="typography__text-label">Text Size Medium</p>
+                            <p class="typography__text-size">Desktop - XL 20px/26px Mobile/tablet 16px/20.8px</p>
+                        </div>
+            
+                        <div class="typography__text-item typography__text-item--regular">
+                            <p class="typography__text-label">Text Size Regular</p>
+                            <p class="typography__text-size">Desktop - XL 16px/20.8px Mobile/tablet 14px/18.2px</p>
+                        </div>
+            
+                        <div class="typography__text-item typography__text-item--small">
+                            <p class="typography__text-label">Text Size Small</p>
+                            <p class="typography__text-size">Desktop - XL 14px/18.2px Mobile/tablet 13px/16.9px</p>
+                        </div>
+            
+                        <div class="typography__text-item typography__text-item--xsmall">
+                            <p class="typography__text-label">Text Size XSmall</p>
+                            <p class="typography__text-size">Desktop/Mobile/Tablet - XL 12px/15.6px</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- icon section -->
+            <section id="icons" class="icons">
+                <div class="icons__container">
+                    <div class="icons__header">
+                        <h2 class="icons__title">Icons</h2>
+                    </div>
+                    <div class="icons__lists">
+                        <div class="icons__list--i1">
+                            <span class="icon icon-xmark"></span>
+                            <code>&lt;span class="icon-xmark"&gt;&lt;/span&gt;</code> 
+                            <!-- &lt means less than and &gt means greater than -->
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-user1"></span>
+                            <code>&lt;span class="icon-user1"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-icon-right"></span>
+                            <code>&lt;span class="icon-icon-right"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-search1"></span>
+                            <code>&lt;span class="icon-search1"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-menu-burger"></span>
+                            <code>&lt;span class="icon-menu-burger"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-icon-sharp"></span>
+                            <code>&lt;span class="icon-icon-sharp"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-icon-marker"></span>
+                            <code>&lt;span class="icon-icon-marker"&gt;&lt;/span&gt;</code> 
+                        </div>
+                        <div class="icons__list--i1">
+                            <span class="icon icon-icon-empty"></span>
+                            <code>&lt;span class="icon-icon-empty"&gt;&lt;/span&gt;</code> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <p class="mb-0">© 2024. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

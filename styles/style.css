@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --orange: #FF961C;
+  --charcoal: #212121;
+  --sky-blue: #6BC6EC;
+  --stone-900: #CCCEB7;
+  --bgcolor: #F7F9EE;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .container .content {
+    flex-grow: 1;
+  }
+}
+.container .sidebar {
+  width: 100%;
+  padding-right: 0;
+  margin-right: 0;
+  position: relative;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container .sidebar {
+    max-width: 250px;
+    padding-right: 20px;
+    margin-right: 20px;
+    position: sticky;
+    top: 10px;
+    align-self: flex-start;
+    height: 100vh;
+  }
+}
+.container .sidebar__list .list-group-item {
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+.container .sidebar__list .list-group a {
+  list-style-type: none;
+  text-decoration: none;
+  color: var(--charcoal);
+  padding: 10px;
+  font-size: 1.25rem;
+  display: block;
+}
+.container .sidebar__list .list-group a:hover {
+  color: var(--orange);
+}
+.container .sidebar__list .list-group a:active {
+  color: var(--orange);
+}
+.container .color__container {
+  width: 100%;
+  padding-block: 0px 30px;
+  border-bottom: 1px solid;
+}
+.container .color__container .color__head {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-block: 20px;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 1px solid var(--orange);
+  position: relative;
+}
+.container .color__container .color__head::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: var(--orange);
+  bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .container .color__container .color__head {
+    text-align: start;
+  }
+}
+.container .color .color__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 600px) {
+  .container .color .color__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+}
+.container .color .color__list .color__card {
+  width: 100%;
+  height: 150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 600px) {
+  .container .color .color__list .color__card {
+    flex-basis: calc(50% - 10px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container .color .color__list .color__card {
+    flex-basis: calc(25% - 30px);
+  }
+}
+.container .color .color__list .color__card code {
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+.container .color .color__list .orange {
+  background-color: var(--orange);
+}
+.container .color .color__list .charcoal {
+  background-color: var(--charcoal);
+}
+.container .color .color__list .sky-blue {
+  background-color: var(--sky-blue);
+}
+.container .color .color__list .stone {
+  background-color: var(--stone-900);
+}
+.container .color .color__list .color__body {
+  padding: 20px;
+  color: #fff;
+}
+.container .color .color__list .color__body > * {
+  display: block;
+}
+
+.typography__container {
+  margin-block: 30px;
+}
+.typography__container .typography__header {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-block: 20px;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 1px solid var(--orange);
+  position: relative;
+}
+.typography__container .typography__header::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: var(--orange);
+  bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .typography__container .typography__header {
+    text-align: start;
+  }
+}
+.typography__container .typography__headings {
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+.typography__container .typography__info {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.typography__container .typography__info-title {
+  font-size: 24px;
+}
+.typography__container .typography__info-weight, .typography__container .typography__info-spacing {
+  font-size: 18px;
+}
+.typography__container .typography__heading {
+  margin-bottom: 20px;
+}
+.typography__container .typography__heading--h1, .typography__container .typography__heading--h2, .typography__container .typography__heading--h3, .typography__container .typography__heading--h4, .typography__container .typography__heading--h5, .typography__container .typography__heading--h6 {
+  font-weight: 500;
+  line-height: 1.5;
+}
+.typography__container .typography__heading--h1 h1 {
+  font-size: 40px;
+}
+.typography__container .typography__heading--h2 h2 {
+  font-size: 28px;
+}
+.typography__container .typography__heading--h3 h1 {
+  font-size: 20px;
+}
+.typography__container .typography__heading--h4 h4 {
+  font-size: 18px;
+}
+.typography__container .typography__heading--h5 h5 {
+  font-size: 14px;
+}
+.typography__container .typography__heading--h6 h6 {
+  font-size: 13px;
+}
+@media screen and (min-width: 600px) {
+  .typography__container .typography__heading--h1 h1 {
+    font-size: 40px;
+  }
+  .typography__container .typography__heading--h2 h2 {
+    font-size: 30.8px;
+  }
+  .typography__container .typography__heading--h3 h1 {
+    font-size: 22px;
+  }
+  .typography__container .typography__heading--h4 h4 {
+    font-size: 19.8px;
+  }
+  .typography__container .typography__heading--h5 h5 {
+    font-size: 15.4px;
+  }
+  .typography__container .typography__heading--h6 h6 {
+    font-size: 14.3px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .typography__container .typography__heading--h1 h1 {
+    font-size: 64px;
+  }
+  .typography__container .typography__heading--h2 h2 {
+    font-size: 40px;
+  }
+  .typography__container .typography__heading--h3 h3 {
+    font-size: 32px;
+  }
+  .typography__container .typography__heading--h4 h4 {
+    font-size: 24px;
+  }
+  .typography__container .typography__heading--h5 h5 {
+    font-size: 16px;
+  }
+  .typography__container .typography__heading--h6 h6 {
+    font-size: 14px;
+  }
+}
+.typography__container .typography__text {
+  border-bottom: 1px solid;
+}
+.typography__container .typography__text-header {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-block: 20px;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 1px solid var(--orange);
+  position: relative;
+}
+.typography__container .typography__text-header::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: var(--orange);
+  bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .typography__container .typography__text-header {
+    text-align: start;
+  }
+}
+.typography__container .typography__text-item {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.typography__container .typography__text-item--large p:first-child {
+  font-size: 20px;
+}
+.typography__container .typography__text-item--medium p:first-child {
+  font-size: 16px;
+}
+.typography__container .typography__text-item--regular p:first-child {
+  font-size: 14px;
+}
+.typography__container .typography__text-item--small p:first-child {
+  font-size: 13px;
+}
+.typography__container .typography__text-item--xsmall p:first-child {
+  font-size: 13px;
+}
+@media screen and (min-width: 600px) {
+  .typography__container .typography__text-item--large p:first-child {
+    font-size: 26px;
+  }
+  .typography__container .typography__text-item--medium p:first-child {
+    font-size: 20.8px;
+  }
+  .typography__container .typography__text-item--regular p:first-child {
+    font-size: 18.2px;
+  }
+  .typography__container .typography__text-item--small p:first-child {
+    font-size: 16.9px;
+  }
+  .typography__container .typography__text-item--xsmall p:first-child {
+    font-size: 15.6px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .typography__container .typography__text-item--large p:first-child {
+    font-size: 24px;
+  }
+  .typography__container .typography__text-item--medium p:first-child {
+    font-size: 20px;
+  }
+  .typography__container .typography__text-item--regular p:first-child {
+    font-size: 16px;
+  }
+  .typography__container .typography__text-item--small p:first-child {
+    font-size: 14px;
+  }
+  .typography__container .typography__text-item--xsmall p:first-child {
+    font-size: 15.6px;
+  }
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?kqa15w");
+  src: url("../fonts/icomoon.eot?kqa15w#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kqa15w") format("truetype"), url("../fonts/icomoon.woff?kqa15w") format("woff"), url("../fonts/icomoon.svg?kqa15w#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xmark:before {
+  content: "\e900";
+}
+
+.icon-user1:before {
+  content: "\e901";
+}
+
+.icon-icon-right:before {
+  content: "\e902";
+}
+
+.icon-search1:before {
+  content: "\e903";
+}
+
+.icon-menu-burger:before {
+  content: "\e904";
+}
+
+.icon-icon-sharp:before {
+  content: "\e905";
+}
+
+.icon-icon-marker:before {
+  content: "\e906";
+}
+
+.icon-icon-empty:before {
+  content: "\e907";
+}
+
+.icons__container {
+  margin-block: 30px;
+}
+.icons__container .icons__header {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-block: 20px;
+  text-transform: uppercase;
+  width: -moz-max-content;
+  width: max-content;
+  margin-bottom: 1px solid var(--orange);
+  position: relative;
+}
+.icons__container .icons__header::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  background-color: var(--orange);
+  bottom: 14px;
+}
+@media screen and (min-width: 768px) {
+  .icons__container .icons__header {
+    text-align: start;
+  }
+}
+.icons__container .icons__lists {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 768px) {
+  .icons__container .icons__lists {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .icons__container .icons__lists {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.icons__container .icons__lists .icons__list--i1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+  margin: 10px;
+}
+.icons__container .icons__lists .icons__list--i1 .icon {
+  font-size: 30px;
+}
+.icons__container .icons__lists .icons__list--i1 code {
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+  word-wrap: break-word;
+}
+
+body {
+  margin: 20px;
+  margin-bottom: 0;
+  font-family: "Inter", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.heading h2 {
+  padding-block: 10px 20px;
+  border-bottom: 1px solid;
+  color: var(--orange);
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.foot {
+  background-color: var(--charcoal);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

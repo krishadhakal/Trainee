@@ -1,0 +1,19 @@
+
+
+// colors
+:root {
+    --orange: #FF961C;
+    --charcoal: #212121;
+    --sky-blue: #6BC6EC;
+    --stone-900: #CCCEB7;
+    --bgcolor: #F7F9EE;
+}
+
+$orange: var(--orange);
+$charcoal: var(--charcoal);
+$sky-blue: var(--sky-blue);
+$stone-900: var(--stone-900);
+$bgcolor: var(--bgcolor);
+
+//font
+$font-family: 'Inter', sans-serif;
