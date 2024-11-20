@@ -1,0 +1,118 @@
+:root {
+    --arrow-size: 8px;
+    --tooltip-bg: #ffffff;
+    --tooltip-border: #ccc;
+    --tooltip-color: #fff; /* White for contrast */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.icon i {
+    font-size: 3rem;
+}
+
+.icon:nth-child(3) {
+    background-image: url('https://icons.iconarchive.com/icons/iconsmind/outline/128/Cow-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.icon::before,
+.icon::after {
+    --scale: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scale(var(--scale));
+    transition: transform 0.3s ease;
+}
+
+
+.icon::before {
+    content: attr(data-tooltip);
+    padding: 0.5rem;
+    background: var(--tooltip-bg);
+    color: var(--tooltip-color);
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    top: calc(100% + var(--arrow-size) + 5px); 
+}
+.icon i:hover::before{
+    color: red;
+}
+
+.icon:nth-child(2):hover::before{
+    color: blue;
+}
+.icon:nth-child(1):before {
+    box-shadow:  0 4px 8px rgba(233, 44, 44, 0.2);;
+    color: red;
+    
+}
+.icon:nth-child(2):before {
+    box-shadow:  0 4px 8px rgba(44, 72, 233, 0.2);;
+    color: blue;
+    
+}
+.icon:nth-child(3):before {
+    box-shadow:  0 4px 8px rgba(189, 85, 85, 0.2);;
+    color: rgb(226, 123, 140);
+    
+}
+.icon::after {
+    content: "";
+    border-style: solid;
+    border-width: var(--arrow-size);
+    border-color: transparent transparent var(--tooltip-bg) transparent;
+    top: calc(100% + 2px); 
+    z-index: 9;
+    transition-delay: 0.1s;
+}
+
+
+.icon:nth-child(2)::before {
+top: auto;
+bottom: calc(100% + var(--arrow-size) + 5px); /
+}
+
+.icon:nth-child(2)::after {
+top: auto;
+bottom: calc(100% + 2px); 
+border-color: var(--tooltip-bg) transparent transparent transparent;
+}
+
+/* Tooltip hover effect */
+.icon:hover::before,
+.icon:hover::after {
+--scale: 1;
+}
+  

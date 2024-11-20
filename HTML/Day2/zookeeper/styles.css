@@ -1,0 +1,47 @@
+body{
+    margin-inline: 50px;
+    font-size:18px;
+}
+.label-text {
+    width: 150px;
+    display: inline-block;
+    font-weight: bold;
+}
+input, select, textarea {
+    padding: 5px;
+    margin-inline: 20px;
+}
+#gender {
+    width: 175px;
+}
+
+.text-red{
+    color: #b50000;
+    font-weight: bold;
+    font-size:20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #39466e; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
+margin-left: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #27304b; 
+    transform: scale(1.05);
+}
+
+.animal-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    margin-top: 10px;
+}
