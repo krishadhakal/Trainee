@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import './resets';
+@import './variable';
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flexgrow{
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    $block: '.card';
+    margin: auto;
+    flex-direction: column;
+    @include flex();
+    font-family: $font-family;
+    background-color: $bgColor;
+    color: $font-color;
+
+    &__heading {
+        margin-block: 84px;
+        h2 {
+            font-size: $head-font;
+        }
+    }
+
+    &__body {
+        @include flex();
+        flex-wrap: wrap;
+        gap: 48px;
+        align-items: stretch; // Ensures all cards have equal height
+    }
+
+    &__content {
+        @include flexgrow();
+        background-color: $bgContent;
+        max-width: 320px;
+        border-radius: 48px;
+        position: relative;
+
+        &--image img {
+            border-top-left-radius: 48px;
+            border-top-right-radius: 48px;
+            width: 100%; 
+            height: 180px;
+            object-fit: cover;
+        }
+
+        #{$block}__over {
+            position: absolute;
+            padding: 10px 20px;
+            background-color: $bgColor;
+            border-radius: 28px;
+            margin: 30px;
+            cursor: pointer;
+            p {
+                font-size: 15px;
+                font-weight: $font-weight-head;
+            }
+        }
+        #{$block}__over:hover{
+            background-color: $buttonColor;
+        }
+
+        #{$block}__description {
+            @include flexgrow();
+            h3 {
+                font-size: $body-font;
+                margin: 48px 60px 25px 48px;
+                font-weight: $font-weight-body;
+            }
+            p {
+                font-size: $sub-body-font;
+                margin: 0 50px 48px 48px;
+            }
+        }
+    }
+
+    &__button {
+        .btn {
+            padding: 20px 30px;
+            background-color: $buttonColor;
+            border: none;
+            border-radius: 42px;
+            margin: 72px;
+            font-size: 19px;
+            font-weight: $font-weight-head;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: $font-color;
+            color: $buttonColor;
+            
+        }
+    }
+}
