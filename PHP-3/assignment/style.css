@@ -1,0 +1,226 @@
+/* signup and login css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #703e3e;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: 700px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Left side for image and text */
+.left-side {
+    /* flex: 1; */
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('media/images/temple.jpg'); /* Image layer */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 50%;
+}
+
+.left-side .text h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size:32px;
+    flex-wrap: wrap;
+}
+
+.left-side .text p{
+    color: #fff;
+}
+
+/* Right side for the sign-up form */
+.right-side {
+    flex: 1;
+    background-color: white;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Error message displayed at the top */
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.signup-form , .login-form, .reset-form {
+    width: 100%;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: #703e3e;
+    color: white;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #372020;
+}
+
+.sign-up {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sign-up a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+}
+
+.sign-up a:hover {
+    text-decoration: underline;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 12px;
+    /* display: block;  */
+    margin-top: 5px; 
+}
+
+
+/* Media queries for responsive design */
+@media screen and (min-width: 768px )and( max-width:909px) {
+    .left-side.text{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-side {
+        display: block;
+        height: 300px;
+        display: none;
+    }
+    .text{
+        padding: 0;
+    }
+
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .right-side {
+        padding: 20px;
+        width: 100%;
+    }
+    .left-side{
+        display: none;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .submit-btn {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .form-group input {
+        padding: 10px;
+    }
+}
