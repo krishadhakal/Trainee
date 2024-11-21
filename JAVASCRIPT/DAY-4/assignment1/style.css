@@ -1,0 +1,19 @@
+
+.spacer{
+    background-color: gray;
+    height: 200vh;
+}
+
+.box1, .box2{
+    width: 80px;
+    height: 80px;
+    background-color: #e74c3c;
+    margin: 40px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    padding: 10px;
+}
