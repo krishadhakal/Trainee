@@ -1,0 +1,57 @@
+.card-img-top {
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.furniture h1 {
+  margin-top: 100px;
+}
+
+.contactus {
+  padding-left: 110px;
+}
+
+.contact .form-control {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #58151c;
+}
+.contact .form-control:focus {
+  background: transparent;
+}
+.contact .form-floating label, .contact .form-floating .form-control:focus ~ label {
+  color: #58151c;
+}
+.contact .form-check-input {
+  border: 2px solid #58151c;
+  background: transparent;
+}
+.contact .form-check-label a {
+  color: #58151c;
+  font-weight: bold;
+}
+.contact #message {
+  border: 2px solid #58151c;
+  height: 260px;
+}
+.contact .btn {
+  background-color: #58151c;
+  padding: 10px 30px;
+  color: #fff3cd;
+}
+.contact .btn:hover, .contact .btn:focus {
+  border: 2px solid #58151c;
+  color: #58151c;
+}
+
+.footer {
+  margin-top: 10px;
+  background-color: #58151c;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.footer .bi {
+  color: white;
+}/*# sourceMappingURL=style.css.map */
