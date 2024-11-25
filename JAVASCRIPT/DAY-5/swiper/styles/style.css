@@ -203,8 +203,11 @@ body {
   .nav-fixed .nav-link:active, .nav-fixed .nav-link:focus, .nav-fixed .nav-link:hover {
     color: #000 !important;
   }
-  .navbar-brand, .nav-link:active, .nav-link:focus, .nav-link:hover {
+  .nav-link:active, .nav-link:focus, .nav-link:hover {
     color: #fff !important;
+  }
+  .navbar-brand:hover {
+    color: #fff;
   }
 }
 @media (min-width: 1024px) {

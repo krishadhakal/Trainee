@@ -218,8 +218,11 @@ body{
     }
   }
   
-  .navbar-brand, .nav-link:active, .nav-link:focus, .nav-link:hover {
+  .nav-link:active, .nav-link:focus, .nav-link:hover {
     color: #fff !important;
+  }
+  .navbar-brand:hover{
+    color: #fff;
   }
 }
 
