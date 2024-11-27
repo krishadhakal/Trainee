@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .label-text {
+            width: 150px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            padding: 5px;
+            margin-inline: 20px;
+        }
+        #country{
+            width: 177px; height:30px;
+        }
+        #newsletter, #btn{
+            margin-inline-start: 170px;
+        }
+        
+    </style>
+</head>
+<body style="font-family: 'Montserrat', sans-serif;  padding: 0px 30px 0px 30px;">
+    <header>
+        <h1>HTML Learning</h1>
+        <nav>
+            <a href="#" style="text-decoration: none;">Home</a>&emsp;
+            <a href="#" style="text-decoration: none;">About Us</a>&emsp;
+            <a href="#" style="text-decoration: none;">Support</a>&emsp;
+            <a href="#" style="text-decoration: none;">Gallery</a>&emsp;
+            <a href="#" style="text-decoration: none;">Contact</a>
+        </nav>
+        <hr>
+        <font size="7">
+            <strong>HTML Forms</strong>
+        </font>
+        <hr>
+    </header>
+    <main>
+        <section>
+            <h2>Personal Details</h2>
+                    
+            <form>
+                <label for="name" class="label-text">Name</label>                
+                <input type="text" id="name" name="name"> <br> <br>
+
+                <label for="email" class="label-text">Email</label>
+                <input type="email" id="email" name="email"> <br> <br>
+
+                <label for="location" class="label-text">Location</label> 
+                <input type="text" id="location" name="location"> <br> <br>
+
+                <label class="label-text">Gender</label>             
+                <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label> <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                <br><br>
+
+                <label for="bday" class="label-text">Birthday</label>
+                <input type="date" id="bday" name="birthday" style="width: 164px;"> <br> <br>
+
+                <label for="country" class="label-text">Country</label>             
+                <select id="country" name="country" >
+                    <option value="">Select country</option>
+                    <option value="nepal">Nepal</option>
+                    <option value="usa">USA</option>
+                    <option value="italy">Italy</option>
+                    <option value="india">India</option>
+                </select> <br> <br>
+
+                <label for="other" class="label-text">Other Information</label>   
+                <textarea id="other" name="other"></textarea> <br><br>
+
+                <input type="checkbox" id="newsletter" name="newsletter"  class="label-check"><label for="newsletter">I want to receive the newsletter</label> <br> <br>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <br><br>
+        <hr>
+        <p>© Copyright. End of my first project</p>
+    </footer>
+</body>
+</html>

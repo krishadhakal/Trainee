@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="box1">
+        <h2>Physical Padding</h2>
+        <p>These padding consists of padding(top, right, bottom, left).</p>
+    </div>
+
+    <div class="box2">
+        <h2>Logical Padding</h2>
+        <p>padding-inline: applies padding on both the start and end of the inline axis</p>
+    </div>
+
+    <div class="box3">
+        <h2>Logical Padding</h2>
+        <p>padding-block: applies padding on both the start and end of the block axis (usually top and bottom in horizontal writing modes).</p>
+    </div>
+
+    <div class="box4">
+        <h2>Logical Padding</h2>
+        <p>padding-inline-start: applies padding at the start of the inline axis (left in LTR, right in RTL) </p>
+        <p>padding-inline-end: applies padding at the end of the inline axis (right in LTR, left in RTL)</p>
+    </div>
+    <div class="box5">
+        <h2>Difference between logical and physical padding</h2>
+        <p>Physical padding</p>
+        <ul>
+            <li>These properties are fixed in direction and don't change based on the text direction or writing mode of the document.</li>
+            <li>Ideal for layouts where the direction (left, right, top, bottom) is constant and does not need to adapt to different languages or writing directions.</li>
+        </ul>
+        <p>Logical padding</p>
+        <ul>
+            <li>These properties adapt to the writing mode and text direction (LTR or RTL) of the document.</li>
+            <li>Ideal for multilingual layouts that need to adjust to different writing directions without changing CSS rules for each direction.</li>
+        </ul>
+    </div>
+</body>
+</html>

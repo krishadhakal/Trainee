@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    line-height: 80px;
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+    background-color: lightgray;
+}
+.box {
+    float: left;
+    width: 45%;
+    margin: 1%;
+    height: 100px;
+    background-color: green;
+    color: white;
+}
+.clearfix {
+    clear: both;
+}
+
+/* using clearfix */
+/* .container {
+    width: 100%;
+    background-color: lightgray;
+}
+.box {
+    float: left;
+    width: 45%;
+    margin: 1%;
+    height: 100px;
+    background-color: green;
+    color: white;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+/* using flexbox instead of float */
+/* .container {
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+    gap: 2%;
+}
+.box {
+    flex: 1;
+    height: 100px;
+    background-color: green;
+    color: white;
+} */

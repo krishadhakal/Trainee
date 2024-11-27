@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*   {
+    margin:0;
+}
+:root{
+    --font-color-primary: #5F5F5F;
+    --font-color-secondary: #9A9A9A;
+}
+
+body{
+    font-family: 'Open Sans';
+    background-color: #E9EDEF;
+}
+
+.subscription__plans{
+    margin-block: 50px;
+    margin-inline: 20px;
+   
+}
+.plan{
+    background-color: #fff;
+    text-align: center;
+}
+.plan--basic, .plan--pro, .plan--premium{
+    padding-top: 0px;
+    margin-bottom: 20px;
+    border-radius:5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.plan__title{
+    background-color: #7DD0ED;
+    /* width: 100%; */
+    padding:20px;
+    margin: 0;
+    color: #fff;
+    font-size: 28px;
+    border-radius: 5px 5px 0px 0px;
+}
+.plan__price{
+    font-size:64px;
+    display: flex;
+    flex-direction: column;
+    color: var(--font-color-primary);
+    font-weight: 700;
+    margin: 30px;
+}
+.plan__price span{
+    font-size:24px;
+}
+
+.plan__features{
+    color: var(--font-color-secondary);
+    line-height: 1.5rem;
+    font-size: 11px;
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+
+.subscription__features{
+    /* margin: 50px; */
+    /* height: 277px; */
+    background-color:#fff;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.feature__label{
+    /* margin: 50px; */
+    display: flex;
+    justify-content: space-between;
+    padding-block: 10px;
+}
+
+.feature__bar {
+    position: relative;
+    flex-grow: 1;
+    height: 20px;
+    background-color: #E0E0E0;
+    margin: 0 px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.feature__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #7DD0ED;
+    border-radius: 10px;
+    width: 0; 
+    transition: width 0.4s ease;
+    opacity: 0; 
+}
+
+.plan:hover{
+    transform: scale(1.1);
+    /* gap: 10px; */
+    /* color: #28A7D2; */
+}
+
+.plan:hover > .plan__price {
+    /* transform: scale(1.1); */
+    color: #28A7D2;
+}
+
+.plan:hover > .plan__title {
+    background-color: #27A6D2;
+}
+
+/* basic plan css hover */
+.plan--basic:hover ~ .subscription__features .feature__fill.feature__fill--basic {
+    width: 70%; 
+    opacity: 1; 
+}
+
+.plan--basic:hover ~ .subscription__features .feature__fill.feature__fill--pro {
+    width: 50%;
+    opacity: 1; 
+}
+
+.plan--basic:hover ~ .subscription__features .feature__fill.feature__fill--premium {
+    width: 60%; 
+    opacity: 1;
+}
+
+/* pro plan css hover */
+.plan--pro:hover ~ .subscription__features .feature__fill.feature__fill--basic {
+    width: 30%; 
+    opacity: 1; 
+}
+
+.plan--pro:hover ~ .subscription__features .feature__fill.feature__fill--pro {
+    width: 50%;
+    opacity: 1; 
+}
+
+.plan--pro:hover ~ .subscription__features .feature__fill.feature__fill--premium {
+    width: 20%; 
+    opacity: 1;
+}
+
+
+/* premium plan css hover */
+.plan--premium:hover ~ .subscription__features .feature__fill.feature__fill--basic {
+    width: 20%; 
+    opacity: 1; 
+}
+
+.plan--premium:hover ~ .subscription__features .feature__fill.feature__fill--pro {
+    width: 30%;
+    opacity: 1; 
+}
+
+.plan--premium:hover ~ .subscription__features .feature__fill.feature__fill--premium {
+    width: 10%; 
+    opacity: 1;
+}
+
+
+/* for bigger screen */
+@media screen and (min-width: 428px){
+    .subscription__plans{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        min-width: 750px;
+    }
+    .plan{
+        min-width: 252px;
+    }
+    .subscription__features{
+        min-width: 750px;
+        /* max-width: 250px; */
+        /* margin: auto; */
+        padding: 20px;
+    }
+}
