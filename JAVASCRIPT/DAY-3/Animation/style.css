@@ -1,0 +1,28 @@
+
+.wrapper{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    height: 100vh;
+
+}
+h2{
+    text-align: center;
+    padding-bottom: 60px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.box{
+    background-color: rgb(139, 60, 60);
+    width: 100px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
