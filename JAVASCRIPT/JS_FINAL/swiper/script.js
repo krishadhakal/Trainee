@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', function(){
   });
 
   // making nav bar fixed on top when the screen is scrolled
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= 100) {
-        $('nav').addClass('nav-fixed');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY >= 100) {
+      document.querySelector('nav').classList.add('nav-fixed');
     } else {
-        $('nav').removeClass('nav-fixed');
+      document.querySelector('nav').classList.remove('nav-fixed');
     }
   });
 
@@ -294,7 +294,7 @@ document.addEventListener('DOMContentLoaded', function(){
       timeoutId = setTimeout(() => {
         func(...args);
       }, 100);
-      console.log('debounce');
+      // console.log('debounce');
     };
     // console.log('debounce');
   }

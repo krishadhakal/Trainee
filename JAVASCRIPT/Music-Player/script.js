@@ -37,7 +37,7 @@ function loadData(indexValue) {
 
 // Play or pause the song when the play/pause button is clicked
 playPauseButton.addEventListener('click', () => {
-    const isMusicPaused = content.classList.contains('paused');
+    const isMusicPaused = content.classList.contains('playing');
     if (isMusicPaused) {
         pauseSong();
     } else {
@@ -47,14 +47,14 @@ playPauseButton.addEventListener('click', () => {
 
 // Play the song
 function playSong() {
-    content.classList.add('paused');
+    content.classList.add('playing');
     playPauseButton.classList.replace("bi-play-circle-fill", "bi-pause-circle-fill");
     audio.play();
 }
 
 // Pause the song
 function pauseSong() {
-    content.classList.remove('paused');
+    content.classList.remove('playing');
     playPauseButton.classList.replace("bi-pause-circle-fill", "bi-play-circle-fill");
     audio.pause();
 }
@@ -67,7 +67,7 @@ prevButton.addEventListener("click", () => {
 function prevSong() {
     index--;
     if (index <= 0) {
-        index = playlists.length; // Loop back to the last song
+        index = playlists.length; 
     }
     loadData(index);
     playSong();
@@ -80,7 +80,7 @@ nextButton.addEventListener("click", () => {
 
 function nextSong() {
     index++;
-    if (index >= playlists.length) {
+    if (index > playlists.length) {
         index = 0; // Loop back to the first song
     }
     loadData(index);
@@ -88,11 +88,11 @@ function nextSong() {
 }
 
 // Shuffle the playlist
-shuffleButton.addEventListener('click', () => {
-    const randIndex = Math.floor(Math.random() * playlists.length);
-    loadData(randIndex + 1); // Add 1 to index for correct playlist entry
-    playSong();
-});
+// shuffleButton.addEventListener('click', () => {
+//     const randIndex = Math.floor(Math.random() * playlists.length);
+//     loadData(randIndex + 1); // Add 1 to index for correct playlist entry
+//     playSong();
+// });
 
 // Seek functionality
 seekSlider.addEventListener('input', () => {
